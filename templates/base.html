@@ -10,8 +10,26 @@
     <title>My Task Manager</title>
 </head>
 <body>
-    <h1>Tasks</h1>
-    <div class="container">
+	<header>
+		<nav>
+			<div class="nav-wrapper">
+				<a href="{{url_for('get_tasks')}}" class="brand-logo">My Task Manager</a>
+				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="{{url_for('get_tasks')}}">Home</a></li>
+					<li><a href="{{url_for('new_task')}}">New Task</a></li>
+					<li><a href="{{url_for('get_categories')}}">Manage Categories</a></li>
+				</ul>
+				<ul class="side-nav" id="mobile-demo">
+					<li><a href="{{url_for('get_tasks')}}">Home</a></li>
+					<li><a href="{{url_for('new_task')}}">New Task</a></li>
+					<li><a href="{{url_for('get_categories')}}">Manage Categories</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<div class="container">
+        <h1>My Tasks</h1>
         {% block content %}
         {% endblock %}
     </div>

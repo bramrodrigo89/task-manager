@@ -13,3 +13,9 @@
 .task_arrow {
     margin-top: 10px;
 }
+
+.align-center {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
