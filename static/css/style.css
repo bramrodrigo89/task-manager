@@ -1,0 +1,15 @@
+.btn-small {
+    padding: 0em 0.5em;
+    height: 35px;
+    margin: 5px;
+    line-height: 35px;
+    width: 100px;
+}
+
+.task_header {
+    margin: 10px;
+}
+
+.task_arrow {
+    margin-top: 10px;
+}
